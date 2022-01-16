@@ -29,10 +29,10 @@ jobs:
         name: Login to Aliyun
         run: docker login --username=${{ secrets.ALIYUN_USERNAME }} --password=${{ secrets.ALIYUN_PASSWORD }} registry.cn-hangzhou.aliyuncs.com
 
-      -
+      #-
         #name: Build 
         #run: docker build . --file Dockerfile --tag registry.cn-hangzhou.aliyuncs.com/deadlessbird/deadlessbirdxgx:simplewale-latest
-      -
+      #-
         name: Push
         uses: docker/build-push-action@v2
         with:
